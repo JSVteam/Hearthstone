@@ -1,0 +1,8 @@
+{
+  "name": "Hearth_Of_Legends",
+  "app_id": "200155b8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
