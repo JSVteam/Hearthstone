@@ -1,3 +1,152 @@
 page-list {
+     .content{
+        background-image:url("http://www.hearthstonetopdecks.com/wp-content/uploads/2016/04/silver-hand-murloc-phone.jpg");
+        background-size:100% 100%;
+    }
 
+    .button{
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        //border-radius: 2px 2px 2px;
+    }
+
+    .Naxxramas {
+        position: relative;
+        background-image:url('https://bnetcmsus-a.akamaihd.net/cms/blog_header/mb/MBASEGXYTOQM1409273619947.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        border-style: solid;
+    
+    }
+    .LK {
+        position: relative;
+        background-image:url('https://nerdist.com/wp-content/uploads/2017/07/Hearthstone-FEAT.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+    
+    }
+    .Kobold {
+        position: relative;
+        background-image:url('https://media.redadn.es/v/video_38325.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+    
+    }
+    
+    .Ungoro {
+        position: relative;
+        background-image:url('https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_hearthstone_heroes_of_warcraft_-_journey_to_ungoro_03_2560x1440.jpg&height=450&width=800&fill-to-fit');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+    
+    }
+    .Gadgetzan {
+        position: relative;
+        background-image:url('https://pbs.twimg.com/media/CwcfLAKXEAAlMR4.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    
+    }
+    
+    .OldGods {
+        position: relative;
+        background-image:url('http://www.hearthstonetopdecks.com/wp-content/uploads/2016/03/key-art-1920x1080.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .Karazan {
+        position: relative;
+        background-image:url('http://assets.hardwarezone.com/img/2016/07/Hearthstone_main.jpg');
+        color: #FFFFFF;
+        padding: 20px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        overflow: hidden;
+        cursor: pointer;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+    
+    }
+    
+    
+    .button:after {
+        content: "";
+        background:white;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 1.0s
+    }
+    
+    .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
 }
+
+

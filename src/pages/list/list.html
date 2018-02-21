@@ -3,21 +3,31 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Expansions & Adventures</ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
+<ion-content padding>
+  <div id="prova">
+  <button ion-button round outline class="Naxxramas">
+    <img src='https://media-hearth.cursecdn.com/attachments/47/312/guide-naxx-logo.png' width = '40%'>
+  </button>
+  <button ion-button large class="LK">
+    <img src='https://media-hearth.cursecdn.com/attachments/56/3/guide-frozenthrone-logo.png' width = '40%'>
+  </button>
+  <button ion-button large class="Kobold">
+    <img src='https://media-hearth.cursecdn.com/attachments/56/2/guide-kobolds-logo.png' width = '40%'>
+   </button>
+    <button ion-button large class="Ungoro">
+      <img src='https://media-hearth.cursecdn.com/attachments/47/305/guide-ungoro-logo.png' width = '40%'>
     </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+    <button ion-button large class="Gadgetzan">
+      <img src='https://media-hearth.cursecdn.com/attachments/47/307/guides-msg-logo.png' width = '40%'>
+    </button>
+    <button ion-button large class="OldGods">
+      <img src='https://media-hearth.cursecdn.com/attachments/47/314/guide-oldgods-logo.png' width = '40%'>
+    </button>
+    <button ion-button large class="Karazan">
+      <img src='https://media-hearth.cursecdn.com/attachments/47/313/guide-kara-logo.png' width = '40%'>
+    </button> 
   </div>
 </ion-content>

@@ -3,16 +3,111 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>All Cards</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div id= "hola">
+    <!-- <button ion-item *ngFor="let card of cardsBasic">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cards_classic">
+          <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsHoF">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsNaxxramas">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsGvG">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsBlackrock">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsGrandTournament">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cardsLeagueofExplorers">
+        <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cards_oldgods">
+          <ion-thumbnail item-start>
+            <img src="{{card.img}}">
+            </ion-thumbnail>
+            <h2>{{card.name}}</h2>
+            <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cards_karazan">
+          <ion-thumbnail item-start>
+            <img src="{{card.img}}">
+            </ion-thumbnail>
+            <h2>{{card.name}}</h2>
+            <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cards_gadgetzan">
+          <ion-thumbnail item-start>
+            <img src="{{card.img}}">
+            </ion-thumbnail>
+            <h2>{{card.name}}</h2>
+            <p>{{card.cardSet}}</p>
+      </button>
+      <button ion-item *ngFor="let card of cards_ungoro">
+     <ion-thumbnail item-start>
+      <img src="{{card.img}}">
+      </ion-thumbnail>
+      <h2>{{card.name}}</h2>
+      <p>{{card.cardSet}}</p>
+      </button> -->
+<button ion-item large *ngFor="let card of cards_LinchKing">
+    <ion-thumbnail item-start>
+      <img src="{{card.img}}">
+      </ion-thumbnail>
+      <h2>{{card.name}}</h2>
+      <p>{{card.cardSet}}</p>
+</button>
+<button ion-item large *ngFor="let card of cards">
+    <ion-thumbnail item-start>
+      <img src="{{card.img}}">
+      </ion-thumbnail>
+      <h2>{{card.name}}</h2>
+      <p>{{card.cardSet}}</p>
+</button>
+</div>
 </ion-content>
+
