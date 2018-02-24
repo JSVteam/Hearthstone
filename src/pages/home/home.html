@@ -96,7 +96,7 @@
       </button> -->
 <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
 </div>
-<button ion-item large *ngFor="let card of cards_LinchKing">
+<button ion-item *ngFor="let card of cards_LinchKing">
     <ion-thumbnail item-start>
       <img src="{{card.img}}">
       </ion-thumbnail>
