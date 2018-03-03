@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Carta_Kobold, Carta_TheLinchKing } from '../../carta';
 import { DataProvider } from '../../providers/data/data';
+import { AppState } from '../../app/app.global';
+
+
 
 @Component({
   selector: 'page-list',
@@ -11,7 +14,7 @@ export class ListPage {
   cards:Carta_Kobold[] = [];
   cards_LinchKing:Carta_TheLinchKing[] = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public _data: DataProvider ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public _data: DataProvider,public global: AppState) {
     this._data.getAllCards().subscribe(
       data => {
         this.cards = data ['Kobolds & Catacombs'];
@@ -27,5 +30,7 @@ export class ListPage {
     });
   }
 
-  
+  changeTheme(theme) {
+    this.global.set('theme', theme);
+  }
 }
