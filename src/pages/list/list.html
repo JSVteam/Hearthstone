@@ -8,7 +8,11 @@
 </ion-header>
 <ion-content padding>
   <div id="prova">
-  <button ion-button large class="button_Classic" (click)="viewDetailsBasic()" >
+      <div class="{{global.state['theme']}}">
+          <button class="pop-in" ion-button (click)="changeTheme('')">Default</button>
+      <button class="pop-in" ion-button color="dark" (click)="changeTheme('theme-dark')">Dark</button>
+   
+      <button ion-button large class="button_Classic" (click)="viewDetailsBasic()" >
     <img src='https://www.paysafecard.com/fileadmin/Website/Merchants/Games/blizzard-hearthstone.png' width="50%">
   </button>
   <button ion-button large class="button_Naxxramas">
@@ -44,5 +48,6 @@
   <button ion-button large class="Kobold">
     <img src='https://media-hearth.cursecdn.com/attachments/56/2/guide-kobolds-logo.png' width = '40%'>
    </button>
+      </div>
   </div>
 </ion-content>
