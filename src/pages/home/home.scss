@@ -1,8 +1,9 @@
 page-home {
 
     .content{
-        background-image:url("http://www.hearthstonetopdecks.com/wp-content/uploads/2016/04/silver-hand-murloc-phone.jpg");
+        // background-image:url("http://www.hearthstonetopdecks.com/wp-content/uploads/2016/04/silver-hand-murloc-phone.jpg");
         background-size:100% 100%;
+        background-color:#564C4A;
     }
 
 
@@ -127,5 +128,23 @@ page-home {
   }
 
 }
+.principal{
+  background-color:transparent;
+}
+.imagecartas {
+  margin-right: 5px;
+}
+.imagecartas img{
+  width:20px;
+}
+.infocartas p, h2{
+  color: #fff;
+}
+
+.item-md ion-thumbnail ion-img, .item-md ion-thumbnail img {
+  width: 115px;
+  height: 150px;
+}
+
 
  

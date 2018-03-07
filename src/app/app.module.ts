@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler, IonicModule, IonicPageModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -22,6 +22,7 @@ import { HttpClient } from '@angular/common/http/src/client';
     BrowserModule,
     IonicModule.forRoot(MyApp, { mode: 'md'}),
     HttpClientModule,
+    IonicPageModule.forChild(HomePage),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

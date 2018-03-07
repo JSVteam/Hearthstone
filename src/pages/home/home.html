@@ -96,20 +96,27 @@
       </button> -->
 <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
 </div>
-<button ion-item *ngFor="let card of cards_LinchKing">
+<!-- <ion-card *ngFor="let card of cards_LinchKing">
+    <ion-thumbnail item-start>
+        <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p>{{card.cardSet}}</p>
+</ion-card> -->
+<!-- <button ion-item *ngFor="let card of cards_LinchKing">
     <ion-thumbnail item-start>
       <img src="{{card.img}}">
       </ion-thumbnail>
       <h2>{{card.name}}</h2>
       <p>{{card.cardSet}}</p>
-</button>
-<button ion-item large *ngFor="let card of cards">
-    <ion-thumbnail item-start>
+</button> -->
+<div ion-item large *ngFor="let card of cards" class="principal">
+  <ion-thumbnail item-start>
       <img src="{{card.img}}">
-      </ion-thumbnail>
-      <h2>{{card.name}}</h2>
-      <p>{{card.cardSet}}</p>
-</button>
+  </ion-thumbnail>
+  <h2>{{card.name}}</h2>
+  <p style="color:#FFFFFF">{{card.cardSet}}</p>
+</div>
 </div>
 </ion-content>
 
