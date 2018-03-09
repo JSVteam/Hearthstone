@@ -5,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule, IonicPageModule } from 'ionic
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { HearthstoneBasicPage } from '../pages/hearthstone-basic/hearthstone-basic';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +17,8 @@ import { AppState } from './app.global';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HearthstoneBasicPage,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { AppState } from './app.global';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HearthstoneBasicPage,
   ],
   providers: [
     StatusBar,

@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Carta_Kobold, Carta_TheLinchKing } from '../../carta';
 import { DataProvider } from '../../providers/data/data';
 import { AppState } from '../../app/app.global';
-
+import { HearthstoneBasicPage } from '../hearthstone-basic/hearthstone-basic';
 
 
 @Component({
@@ -23,11 +23,9 @@ export class ListPage {
     )
   }
 
-  itemTapped(event, item) {
+  itemTapped() {
     // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
+    this.navCtrl.push(HearthstoneBasicPage);
   }
 
   changeTheme(theme) {
