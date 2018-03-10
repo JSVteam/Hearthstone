@@ -7,20 +7,22 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>hearthstone_basic</ion-title>
+    <ion-title>Detalls</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
+<div id = "Hola">
+  <div ion-item large *ngFor="let card of cards_classic" class="principal">
+    <ion-thumbnail item-start>
+        <img src="{{card.img}}">
+    </ion-thumbnail>
+    <h2>{{card.name}}</h2>
+    <p style="color:#FFFFFF">{{card.cardSet}}</p>
+  </div>
+      <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
       </div>
-    <div ion-item large *ngFor="let card of cards" class="principal">
-        <ion-thumbnail item-start>
-            <img src="{{card.img}}">
-        </ion-thumbnail>
-        <h2>{{card.name}}</h2>
-        <p style="color:#FFFFFF">{{card.cardSet}}</p>
-      </div>
+</div>
 </ion-content>
