@@ -15,6 +15,16 @@
 
 <ion-content padding>
 <div id = "Hola">
+    <div ion-item large *ngFor="let card of cardsBasic" class="principal">
+        <ion-thumbnail item-start>
+            <img src="{{card.img}}">
+        </ion-thumbnail>
+        <h2>{{card.name}}</h2>
+        <p style="color:#FFFFFF">{{card.cardSet}}</p>
+      </div>
+          <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
+          </div>
+    </div>
   <div ion-item large *ngFor="let card of cards_classic" class="principal">
     <ion-thumbnail item-start>
         <img src="{{card.img}}">
@@ -22,7 +32,12 @@
     <h2>{{card.name}}</h2>
     <p style="color:#FFFFFF">{{card.cardSet}}</p>
   </div>
-      <div class="loading" *ngIf="cardsBasic == 0 || cardsClassic == 0">
-      </div>
-</div>
+  <div ion-item large *ngFor="let card of cardsHoF" class="principal">
+      <ion-thumbnail item-start>
+          <img src="{{card.img}}">
+      </ion-thumbnail>
+      <h2>{{card.name}}</h2>
+      <p style="color:#FFFFFF">{{card.cardSet}}</p>
+    </div>
+
 </ion-content>
