@@ -36,7 +36,7 @@ export class ListPage {
   }
 
   itemTapped() {
-        this.navCtrl.push(HsGvGPage);
+        this.navCtrl.push(HsBlackrockPage);
   }
 
   changeTheme(theme) {
