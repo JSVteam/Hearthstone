@@ -65,6 +65,15 @@ export class ListPage {
       case 9:
       this.navCtrl.push(HsGadgetzanPage);
       break;
+      case 10:
+      this.navCtrl.push(HsUnGoroPage);
+      break;
+      case 11:
+      this.navCtrl.push(HsFrozenThronePage);
+      break;
+      case 12:
+      this.navCtrl.push(HsKoboldsPage);
+      break;
     }
   }
 
