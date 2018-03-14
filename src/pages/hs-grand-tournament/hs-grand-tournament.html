@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HS_GrandTournament</ion-title>
+    <ion-title>The Grand Tournament</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <div class="loading" *ngIf="cardsGrandTournament == 0">
+      </div>
+      <div ion-item large *ngFor="let card of cardsGrandTournament" class="principal">
+          <ion-thumbnail item-start>
+              <img src="{{card.img}}">
+          </ion-thumbnail>
+          <h2>{{card.name}}</h2>
+          <p style="color:#FFFFFF">{{card.cardSet}}</p>
+        </div>
 
 </ion-content>

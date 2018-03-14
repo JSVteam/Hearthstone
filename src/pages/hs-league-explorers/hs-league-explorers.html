@@ -7,12 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HS_LeagueExplorers</ion-title>
+    <ion-title>League of Explorers</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <div class="loading" *ngIf="cardsLeagueofExplorers == 0">
+      </div>
+      <div ion-item large *ngFor="let card of cardsLeagueofExplorers" class="principal">
+          <ion-thumbnail item-start>
+              <img src="{{card.img}}">
+          </ion-thumbnail>
+          <h2>{{card.name}}</h2>
+        </div>
 
 </ion-content>
