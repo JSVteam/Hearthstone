@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HS_FrozenThrone</ion-title>
+    <ion-title>Knights of the Frozen Throne</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <div class="loading" *ngIf="cards_LinchKing == 0">
+      </div>
+      <div ion-item large *ngFor="let card of cards_LinchKing" class="principal">
+          <ion-thumbnail item-start>
+              <img src="{{card.img}}">
+          </ion-thumbnail>
+          <h2>{{card.name}}</h2>
+          <p style="color:#FFFFFF">{{card.cardSet}}</p>
+        </div>
 
 </ion-content>

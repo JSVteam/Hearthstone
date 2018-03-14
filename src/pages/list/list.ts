@@ -36,7 +36,7 @@ export class ListPage {
   }
 
   itemTapped() {
-        this.navCtrl.push(HsOldGodsPage);
+        this.navCtrl.push(HsKoboldsPage);
   }
 
   changeTheme(theme) {
