@@ -17,6 +17,8 @@ import { HsFrozenThronePage } from '../hs-frozen-throne/hs-frozen-throne';
 import { HsKoboldsPage } from '../hs-kobolds/hs-kobolds';
 
 
+let number = 0;
+
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
@@ -37,13 +39,33 @@ export class ListPage {
   itemTapped(number) {
     switch (number) {
       case 1:
-        
+          this.navCtrl.push(HearthstoneBasicPage);
         break;
-    
-      default:
-        break;
+      case 2:
+        this.navCtrl.push(HsNaxxramasPage);
+      break;
+      case 3:
+      this.navCtrl.push(HsGvGPage);
+      break;
+      case 4:
+      this.navCtrl.push(HsBlackrockPage);
+      break;
+      case 5:
+      this.navCtrl.push(HsGrandTournamentPage);
+      break;
+      case 6:
+      this.navCtrl.push(HsLeagueExplorersPage);
+      break;
+      case 7:
+      this.navCtrl.push(HsOldGodsPage);
+      break;
+      case 8:
+      this.navCtrl.push(HsKarazhanPage);
+      break;
+      case 9:
+      this.navCtrl.push(HsGadgetzanPage);
+      break;
     }
-        this.navCtrl.push(HsOldGodsPage);
   }
 
   changeTheme(theme) {
