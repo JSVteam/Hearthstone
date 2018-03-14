@@ -17,7 +17,6 @@ import { HsFrozenThronePage } from '../hs-frozen-throne/hs-frozen-throne';
 import { HsKoboldsPage } from '../hs-kobolds/hs-kobolds';
 
 
-
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
@@ -35,8 +34,16 @@ export class ListPage {
     )
   }
 
-  itemTapped() {
-        this.navCtrl.push(HsKoboldsPage);
+  itemTapped(number) {
+    switch (number) {
+      case 1:
+        
+        break;
+    
+      default:
+        break;
+    }
+        this.navCtrl.push(HsOldGodsPage);
   }
 
   changeTheme(theme) {
